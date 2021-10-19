@@ -1,0 +1,20 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-git-details',
+  templateUrl: './git-details.component.html',
+  styleUrls: ['./git-details.component.css']
+})
+export class GitDetailsComponent implements OnInit {
+  userName!: string;
+
+  constructor() { }
+
+  findUser() {
+    console.log('User ::', this.userName)
+  }
+
+  ngOnInit(): void {
+  }
+
+}

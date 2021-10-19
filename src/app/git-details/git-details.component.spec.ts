@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProComponent } from './pro.component';
+import { GitDetailsComponent } from './git-details.component';
 
-describe('ProComponent', () => {
-  let component: ProComponent;
-  let fixture: ComponentFixture<ProComponent>;
+describe('GitDetailsComponent', () => {
+  let component: GitDetailsComponent;
+  let fixture: ComponentFixture<GitDetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProComponent ]
+      declarations: [ GitDetailsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProComponent);
+    fixture = TestBed.createComponent(GitDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
