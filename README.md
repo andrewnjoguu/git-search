@@ -1,12 +1,14 @@
 # Project-Name
 
-Git search is a webiste where you can search for a github user and find their account and repositories.
+GIT SEARCH
 
 
 ## Technologies Used
 
 - HTML CSS Boostrap TypeScript and JavaScript was used in making tis project 
 
+## About
+Git search is a webiste where you can search for a github user and find their account and repositories.
 
 ##### Setup Instructions and Installation
 
