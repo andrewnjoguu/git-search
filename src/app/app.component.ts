@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpService } from './HTTP/http.service';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -7,20 +7,14 @@ import { HttpService } from './HTTP/http.service';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent {
   title = 'git-search';
-  user: any;
+  
 
-  constructor(private http: HttpService) {}
+  constructor() {}
 
-  async getUser() {
-    (await this.http.user('andrewnjoguu')).subscribe((data: any) => {
-      console.log(data);
-      this.user = { ...data };
-    });
+ 
+  
   }
- ngOnInit(){
-   this.getUser();
- }
-
-}
+ 
+ 

@@ -1,18 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { HttpService } from '../HTTP/http.service';
 @Component({
   selector: 'app-git-details',
   templateUrl: './git-details.component.html',
   styleUrls: ['./git-details.component.css']
 })
 export class GitDetailsComponent implements OnInit {
-  userName!: string;
+    gitHubUser : any
+  constructor(private http: HttpService) { }
 
-  constructor() { }
+  async findUser(user: any) {
 
-  findUser() {
-    console.log('User ::', this.userName)
+    console.log('User ::', user);
+    (await this.http.user(user)).subscribe((data: any) => {
+      console.log(data);
+      this.gitHubUser = { ...data };
+    });
+
+
   }
+  
+
 
   ngOnInit(): void {
   }

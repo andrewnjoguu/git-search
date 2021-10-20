@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "gh-pages-build": "ng build --base-href=https://andrewnjoguu.github.io/git-search/",
+    "gh-pages-deploy": "npx angular-cli-ghpages --dir=dist/git-search"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +23,7 @@
     "@angular/router": "~12.2.0",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "bootstrap": "^4.5.0",
+    "buffer": "^6.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -30,7 +33,7 @@
     "@angular/cli": "~12.2.8",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
-    "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0-rc.2",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
